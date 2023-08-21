@@ -132,10 +132,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\Source\Config\unit.cpp" />
     <ClCompile Include="..\Source\Game\game.cpp" />
     <ClCompile Include="..\Source\main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\Source\Config\unit.hpp" />
     <ClInclude Include="..\Source\Game\game.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
