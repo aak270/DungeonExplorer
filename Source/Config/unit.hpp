@@ -5,8 +5,8 @@ namespace unit {
 	typedef unsigned int Tile;
 
 	namespace {
-		// One tile is 32 pixel
-		const int TILE_SIZE = 32;
+		// One tile is 16 pixel
+		const int TILE_SIZE = 16;
 	}
 
 	inline int tileToPixel(Tile tile) {

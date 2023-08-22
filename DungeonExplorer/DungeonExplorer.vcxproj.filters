@@ -19,6 +19,18 @@
     <Filter Include="Source Files\Config">
       <UniqueIdentifier>{a8c98ad5-7b82-4516-83e9-bc6faae3ab88}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Scene">
+      <UniqueIdentifier>{1875ea5f-1570-409d-9e50-62ac78260417}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Config">
+      <UniqueIdentifier>{01b92326-6008-4b87-ae14-37c50e7f6f52}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Game">
+      <UniqueIdentifier>{14935651-856c-400a-9144-749edb29c68c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Scene">
+      <UniqueIdentifier>{a0ffdb7e-5e56-4e1a-a8a0-7dbdf8c9b1a6}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\Source\main.cpp">
@@ -30,13 +42,22 @@
     <ClCompile Include="..\Source\Config\unit.cpp">
       <Filter>Source Files\Config</Filter>
     </ClCompile>
+    <ClCompile Include="..\Source\Scene\startScreen.cpp">
+      <Filter>Source Files\Scene</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\Source\Game\game.hpp">
-      <Filter>Source Files\Game</Filter>
-    </ClInclude>
     <ClInclude Include="..\Source\Config\unit.hpp">
-      <Filter>Source Files\Config</Filter>
+      <Filter>Header Files\Config</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Game\game.hpp">
+      <Filter>Header Files\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Game\scene.hpp">
+      <Filter>Header Files\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Scene\startScreen.hpp">
+      <Filter>Header Files\Scene</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

@@ -135,10 +135,13 @@
     <ClCompile Include="..\Source\Config\unit.cpp" />
     <ClCompile Include="..\Source\Game\game.cpp" />
     <ClCompile Include="..\Source\main.cpp" />
+    <ClCompile Include="..\Source\Scene\startScreen.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\Source\Config\unit.hpp" />
     <ClInclude Include="..\Source\Game\game.hpp" />
+    <ClInclude Include="..\Source\Game\scene.hpp" />
+    <ClInclude Include="..\Source\Scene\startScreen.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
