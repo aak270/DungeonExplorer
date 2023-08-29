@@ -3,18 +3,28 @@
 
 #include <SDL.h>
 #include "../Config/unit.hpp"
-#include "scene.hpp"
+
+class Scene;
 
 class Game {
 public:
-	Game(Scene* scene);
+	Game();
 	~Game();
 
-	int run();
+	int run(Scene* scene);
+
+	// Getters
+	SDL_Renderer* getRenderer() {
+		return renderer;
+	}
+
+	// Window dimension
+	const int WINDOW_WIDTH = 640;
+	const int WINDOW_HEIGHT = 480;
 
 	// Screen dimension in tiles
-	const unit::Tile SCREEN_WIDTH = 40;
-	const unit::Tile SCREEN_HEIGHT = 30;
+	const unit::Tile SCREEN_WIDTH = 20;
+	const unit::Tile SCREEN_HEIGHT = 15;
 
 private:
 	int initSDL();

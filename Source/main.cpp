@@ -2,12 +2,12 @@
 #include "Game/game.hpp"
 #include "Scene/startScreen.hpp"
 
-int main(int argc, char* argv[]) {
+int WinMain(int argc, char* argv[]) {
+	Game dungeonExplorer = Game();
 	// The first scene to appear
-	Scene* startScreen = new StartScreen();
+	Scene* startScreen = new StartScreen(&dungeonExplorer);
 
-	Game dungeonExplorer = Game(startScreen);
-	dungeonExplorer.run();
+	dungeonExplorer.run(startScreen);
 	
 	printf("Thanks for playing :)");
 	return 0;
